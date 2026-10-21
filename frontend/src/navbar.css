@@ -1,0 +1,184 @@
+
+.navbar {
+    position: fixed;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 94%;
+    max-width: 1650px;
+    height: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 18px;
+
+    background: rgba(24, 25, 10, 0.82);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(250, 239, 140, 0.45);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 0 25px rgba(243, 240, 107, 0.1),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    z-index: 9999;
+}
+
+
+.brand {
+
+    color: white;
+
+    font-size: 26px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    transition: .35s;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.brand:hover {
+
+    color: #f6f5ad;
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.nav-item {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    padding: 10px 22px;
+
+    border-radius: 12px;
+
+    transition: .3s;
+
+    border: 1px solid transparent;
+}
+
+
+.nav-item:hover {
+
+    color: #f5f6a9;
+
+    background: rgba(248, 248, 56, 0.08);
+
+    border: 1px solid rgba(241, 244, 85, 0.35);
+
+}
+
+/* Active */
+
+.nav-item.active {
+
+    color: #f6efa5;
+
+    background: rgba(248, 223, 56, 0.18);
+
+    border: 1px solid rgba(240, 233, 90, 0.55);
+
+    box-shadow:
+        inset 0 0 10px rgba(230, 245, 63, 0.25),
+        0 0 15px rgba(248, 219, 56, 0.2);
+
+}
+
+
+.logout-btn {
+
+    padding: 10px 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255,80,80,.35);
+
+    background: rgba(255,80,80,.10);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.logout-btn:hover {
+
+    background: #ef4444;
+
+    color: white;
+
+}
+
+
+@media (max-width:900px){
+
+.navbar{
+
+    width:97%;
+
+    padding:0 12px;
+
+}
+
+.brand{
+
+    font-size:20px;
+
+}
+
+.nav-item,
+.logout-btn{
+
+    padding:8px 14px;
+
+    font-size:14px;
+
+}
+
+.nav-links{
+
+    gap:6px;
+
+}
+
+}
